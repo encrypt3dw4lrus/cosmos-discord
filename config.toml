@@ -1,0 +1,27 @@
+# Cosmos Discord Faucet configuration
+
+verbose        = "yes"
+
+[cosmos]
+prefix         = "qom"
+denomination   = "uqom"
+
+[testnets]
+    [testnets.ql1]
+    node_url = "https://testnet.qom.one:26657"
+    chain_id = "qom_7668378-1"
+    faucet_address = "qom15aptdqmm7ddgtcrjvc5hs988rlrkze40l4q0he"
+    block_explorer_tx = "https://testnet.qom.one/"
+    daily_cap = "400000000"
+    amount_to_send = "10000000"
+    tx_fees = "500"
+
+
+[discord]
+# token for discord in env
+# comma separated list of channels
+channels_to_listen = "test-channel"
+# how often user can request tokens from faucet (seconds)
+# 10800 = 3  hours
+# 86400 = 24 hours
+request_timeout    = "86400"
